@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #ffffffe7; */
+}
+
+body {
+    background-color: #ffffffe7;
+}
+
+
+.navbar {
+    background-color: #ece6f3;
+    padding: 15px 50px;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.navbar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoImg {
+    height: 60px;
+    /* background-color: transparent; */
+}
+
+#logo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #8A38D9;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlinks li {
+    margin: 8px 15px;
+    list-style: none;
+}
+
+
+.navlinks a {
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition-duration: 0.5s;
+}
+
+.navlinks a:hover,
+.navlinks a:active {
+    background-color: #AC79F2;
+    color: white;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    width: 100px;
+    background-color: #8A38D9;
+    color: white;
+    border: 4px;
+    border-color: black;
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button a {
+    color: aliceblue
+}
+
+.cta-button:hover {
+    background-color: #AC79F2;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.brandName {
+    margin-top: 120px;
+    text-align: center;
+    color: #57568C;
+}
+
+.brandName P {
+    margin-top: 20px;
+}
+
+/* banner section */
+
+.banner {
+    padding: 30px 80px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-left h2 {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.banner-left p {
+    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.banner-left button {
+    margin-top: 20px;
+
+}
+
+.bannerImg {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+/* client section */
+.clientSection {
+    text-align: center;
+    padding: 30px 80px;
+    background-color: aliceblue;
+}
+
+.clientSection p {
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+.clientLogoSection {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    
+}
+
+
+.clientLogo {
+    height: 60px;
+    transition: height 0.5s ease;
+}
+
+.clientLogo:hover {
+    height: 80px;
+    cursor: pointer;
+}
+
+/* utility section */
+
+.BlockchainUtilitySection {
+    text-align: center;
+    padding: 30px 80px;
+    background-color: white;
+}
+
+.BlockchainUtilitySection p {
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+.utilitySection {
+    display: flex;
+    gap: 100px;
+}
+
+.utilityCard {
+    border-radius: 5px;
+    padding: 30px 40px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    ;
+}
+
+.utilityCard h3 {
+    margin-top: 20px;
+}
+
+.utilityCard p {
+    margin-top: 15px;
+}
+
+.utilityCard img {
+    width: 40px;
+    background-color: #8cdfe2;
+    border-radius: 15px 0px;
+    padding: 4px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        position: sticky;
+        background-color: WHITE;
+        padding: 2px;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navlinks {
+        /* flex-direction: column; */
+        /* Stack links vertically */
+        align-items: center;
+    }
+
+    .navlinks li {
+        margin: 5px 0;
+        margin-left: 5px;
+        /* Reduce margin for smaller screens */
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .banner {
+        padding: 4px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .banner-right {
+        order: 1;
+    }
+
+    .banner-left {
+        order: 2;
+    }
+
+
+
+
+    .brandName {
+        margin-top: 20px;
+        text-align: center;
+        color: #57568C;
+    }
+
+    .clientSection {
+        text-align: center;
+        padding: 30px 20px;
+        background-color: aliceblue;
+    }
+
+    .clientLogoSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 10px;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+
+
+    .BlockchainUtilitySection {
+        text-align: center;
+        padding: 30px 30px;
+        background-color: white;
+    }
+
+    .utilitySection {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+}
