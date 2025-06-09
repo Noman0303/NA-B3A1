@@ -360,6 +360,61 @@ body {
     border-radius: 5px;
 }
 
+/* Footer */
+
+.footerSection {
+    width: full;
+    background-color: #221e1e;
+    color: white;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 80px;
+}
+
+.footerLogo p {
+    margin-top: 20px;
+}
+
+.logolinks {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.logolinks img {
+    width: 30px;
+    filter: invert(100%);
+}
+
+.companyLinks {
+    display: flex;
+    gap: 30px;
+}
+
+
+.companyLinks div ui li {
+    text-decoration: none;
+    display: flex;
+    margin-top: 5px;
+}
+
+.updateSection input {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 800px) {
 
     .utilitySection {
@@ -422,6 +477,16 @@ body {
         text-align: center;
         padding: 30px 30px;
         background-color: aliceblue;
+    }
+
+    .footerSection {
+        width: full;
+        background-color: #221e1e;
+        color: white;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 30px;
     }
 
 
@@ -602,6 +667,18 @@ body {
 
     .contactImg img {
         width: 80%;
+    }
+
+    .footerSection {
+        width: full;
+        background-color: #221e1e;
+        color: white;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: space-between;
+        padding: 30px 20px;
     }
 
 }
